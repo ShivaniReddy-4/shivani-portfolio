@@ -1,17 +1,24 @@
-# my_portfolio
+# Shivani Reddy Portfolio
 
-A new Flutter project.
+Flutter web portfolio for Kondla Shivani Reddy, using the indigo/lavender home, About and Projects format of https://paridhiprasanna.github.io/Portfolio-UI-Flutter/. Independently implemented with details from the supplied resume. Uses initials because no portrait was provided. Training and learning projects remain labeled ongoing; no unverified project links or outcomes are claimed.
 
-## Getting Started
+## Run
 
-This project is a starting point for a Flutter application.
+```sh
+flutter pub get
+flutter run -d chrome
+```
 
-A few resources to get you started if this is your first Flutter project:
+## Validate and build
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+```sh
+flutter analyze
+flutter test
+flutter build web --release --base-href /shivani-portfolio/
+```
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Publish
+
+Push to `ShivaniReddy-4/shivani-portfolio` on `main`, then select **GitHub Actions** in repository Settings → Pages → Build and deployment. The included workflow builds and deploys to https://shivanireddy-4.github.io/shivani-portfolio/.
+
+Contact links open email, LinkedIn and GitHub. Resume PDF and phone number are not bundled; the site uses professional details and the email supplied for contact.
